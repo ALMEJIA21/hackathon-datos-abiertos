@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+/* Tarjetas con efecto flotante */
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos principales */
+h1 {
+    font-weight: 700;
+    color: #39a900 !important; /* Verde institucional */
+    letter-spacing: -0.5px;
+}
+
+h3 {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+/* Estilos personalizados para la tabla de datos */
+.table {
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 15px;
+}
+
+.table thead th {
+    background-color: #39a900;
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: 15px;
+}
+
+.table thead th:first-child {
+    border-top-left-radius: 10px;
+}
+
+.table thead th:last-child {
+    border-top-right-radius: 10px;
+}
+
+.table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.table tbody tr:hover {
+    background-color: #f1fdf3;
+}
+
+.table tbody td {
+    padding: 15px;
+    vertical-align: middle;
+    border-bottom: 1px solid #eee;
+}
+
+/* Botón principal de búsqueda */
+.btn-primary {
+    background-color: #fc7323; /* Naranja de contraste */
+    border-color: #fc7323;
+    font-weight: 500;
+    padding: 10px 25px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #e05e10;
+    border-color: #e05e10;
+    box-shadow: 0 4px 10px rgba(252, 115, 35, 0.3);
+    transform: translateY(-2px);
+}
+
+.btn-outline-secondary {
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+
+/* Campos de texto del formulario */
+.form-control {
+    border-radius: 8px;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    box-shadow: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #39a900;
+    box-shadow: 0 0 0 0.25rem rgba(57, 169, 0, 0.25);
+}
