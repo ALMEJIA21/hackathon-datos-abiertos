@@ -1,4 +1,4 @@
-package com.example;
+package com.sena.hackathon;
 
 public class Main {
     public static void main(String[] args) {
